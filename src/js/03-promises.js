@@ -1,5 +1,7 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
-refs = {
+
+
+const refs = {
 formRef: document.querySelector('.form'),
 delayRef: document.querySelector('[name="delay"]'),
 stepRef: document.querySelector('[name="step"]'),
@@ -45,5 +47,5 @@ for (let i = 1; i <= amount; i += 1) {
   });
     delay += step;
   }
-  fornRef.reset()
+  refs.formRef.reset()
 }
